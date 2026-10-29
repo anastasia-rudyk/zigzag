@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-mist text-ink antialiased;
+  }
+  body {
+    @apply font-sans leading-relaxed;
+  }
+  h1, h2, h3 {
+    @apply font-display tracking-tight text-ink;
+  }
+  :focus-visible {
+    @apply outline-none ring-2 ring-route ring-offset-2 ring-offset-mist;
+  }
+}
+
+@layer components {
+  .page {
+    @apply mx-auto w-full max-w-page px-4 sm:px-6;
+  }
+  .panel {
+    @apply rounded-xl border border-line bg-white;
+  }
+  .input {
+    @apply w-full rounded-lg border border-line bg-white px-3 py-2 text-ink placeholder:text-slate-soft
+      focus:border-fir focus:outline-none focus:ring-2 focus:ring-fir/30;
+  }
+  .label {
+    @apply mb-1 block text-sm font-semibold text-ink;
+  }
+}
+
+/* Карта Leaflet успадковує шрифт сторінки */
+.leaflet-container {
+  font-family: inherit;
+  border-radius: 0.75rem;
+  z-index: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Друк плану подорожі (експорт у PDF через діалог друку) */
+@media print {
+  header, footer, .no-print {
+    display: none !important;
+  }
+  html, body {
+    background: white;
+  }
+  .panel {
+    border-color: #999;
+    break-inside: avoid;
+  }
+}

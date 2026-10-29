@@ -1,0 +1,22 @@
+# Локальний запуск усієї системи однією командою: docker compose up --build
+services:
+  mongo:
+    image: mongo:7
+    restart: unless-stopped
+    volumes:
+      - mongo-data:/data/db
+
+  app:
+    build: .
+    restart: unless-stopped
+    depends_on:
+      - mongo
+    ports:
+      - "5000:5000"
+    environment:
+      MONGODB_URI: mongodb://mongo:27017/ukrroute
+      JWT_SECRET: ${JWT_SECRET:-local-dev-secret}
+      OSRM_URL: https://router.project-osrm.org
+
+volumes:
+  mongo-data:

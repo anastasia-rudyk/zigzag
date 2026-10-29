@@ -1,0 +1,20 @@
+{
+  "name": "ukrroute",
+  "version": "1.0.0",
+  "private": true,
+  "description": "UkrRoute — веб-орієнтована інформаційна система пошуку та планування туристичних подорожей Україною",
+  "scripts": {
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "dev": "concurrently -n api,web -c green,yellow \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "build": "npm run build --prefix client",
+    "start": "npm start --prefix server",
+    "seed": "npm run seed --prefix server",
+    "test": "npm test --prefix server",
+    "benchmark": "npm run benchmark --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  },
+  "author": "Анастасія Рудик, група ОІ-23",
+  "license": "MIT"
+}

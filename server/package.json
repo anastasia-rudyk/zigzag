@@ -1,0 +1,25 @@
+{
+  "name": "ukrroute-server",
+  "version": "1.0.0",
+  "description": "UkrRoute — серверна частина (Node.js + Express + MongoDB)",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "seed": "node src/seed/index.js",
+    "test": "node --test",
+    "benchmark": "node scripts/benchmark.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.8.0"
+  }
+}
