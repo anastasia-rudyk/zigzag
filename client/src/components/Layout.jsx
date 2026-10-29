@@ -44,7 +44,7 @@ export default function Layout() {
         <div className="page flex h-16 items-center justify-between gap-4">
           <Link to="/" className="flex items-center gap-2" onClick={close}>
             <Logo />
-            <span className="font-display text-lg font-bold">UkrRoute</span>
+            <span className="font-display text-lg font-bold">Zigzag</span>
           </Link>
 
           <nav className="hidden items-center gap-1 md:flex" aria-label="Головна навігація">
@@ -100,7 +100,7 @@ export default function Layout() {
 
       <footer className="border-t border-line py-6 text-sm text-slate-soft">
         <div className="page flex flex-col justify-between gap-2 sm:flex-row">
-          <span>UkrRoute — курсова робота з дисципліни «Веб-технології та веб-дизайн»</span>
+          <span>Zigzag — курсова робота з дисципліни «Веб-технології та веб-дизайн»</span>
           <span>Карти © OpenStreetMap, маршрутизація OSRM</span>
         </div>
       </footer>
@@ -111,9 +111,9 @@ export default function Layout() {
 function Logo() {
   return (
     <svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true">
-      <path d="M8 24 C 8 12, 24 20, 24 8" stroke="#E8590C" strokeWidth="3" fill="none" strokeLinecap="round" />
-      <circle cx="8" cy="24" r="5" fill="#1F5E4A" />
-      <circle cx="24" cy="8" r="5" fill="#E8590C" />
+      <path d="M6 26 L12 14 L19 22 L26 6" stroke="#E8590C" strokeWidth="3" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+      <circle cx="6" cy="26" r="4" fill="#1F5E4A" />
+      <circle cx="26" cy="6" r="4" fill="#E8590C" />
     </svg>
   );
 }

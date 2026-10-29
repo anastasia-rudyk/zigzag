@@ -2,7 +2,7 @@ import 'dotenv/config';
 
 export const config = {
   port: Number(process.env.PORT) || 5000,
-  mongoUri: process.env.MONGODB_URI || 'mongodb://localhost:27017/ukrroute',
+  mongoUri: process.env.MONGODB_URI || 'mongodb://localhost:27017/zigzag',
   jwtSecret: process.env.JWT_SECRET || 'dev-secret-change-me',
   jwtExpiresIn: '7d',
   osrmUrl: process.env.OSRM_URL || 'https://router.project-osrm.org',

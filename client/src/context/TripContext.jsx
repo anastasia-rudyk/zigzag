@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useState } from 'react';
 
-const STORAGE_KEY = 'ukrroute_selection';
+const STORAGE_KEY = 'zigzag_selection';
 const TripContext = createContext(null);
 
 function loadSelection() {

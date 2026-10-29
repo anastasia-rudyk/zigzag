@@ -1,8 +1,8 @@
 {
-  "name": "ukrroute",
+  "name": "zigzag",
   "version": "1.0.0",
   "private": true,
-  "description": "UkrRoute — веб-орієнтована інформаційна система пошуку та планування туристичних подорожей Україною",
+  "description": "Zigzag — веб-орієнтована інформаційна система пошуку та планування туристичних подорожей Україною",
   "scripts": {
     "install:all": "npm install && npm install --prefix server && npm install --prefix client",
     "dev": "concurrently -n api,web -c green,yellow \"npm run dev --prefix server\" \"npm run dev --prefix client\"",

@@ -1,4 +1,4 @@
-const TOKEN_KEY = 'ukrroute_token';
+const TOKEN_KEY = 'zigzag_token';
 
 export const tokenStore = {
   get: () => {

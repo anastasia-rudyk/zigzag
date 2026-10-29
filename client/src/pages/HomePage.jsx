@@ -28,10 +28,10 @@ export default function HomePage() {
       <section className="page grid items-center gap-10 lg:grid-cols-[1.2fr_1fr]">
         <div>
           <h1 className="mb-5 text-4xl font-bold leading-[1.1] sm:text-5xl">
-            Плануйте подорожі Україною без зайвих кілометрів
+            Подорожі Україною без зайвих зигзагів
           </h1>
           <p className="mb-8 max-w-xl text-lg text-slate-soft">
-            Оберіть місця, які хочете побачити, а UkrRoute складе найкоротший маршрут, розкладе його по днях і
+            Оберіть місця, які хочете побачити, а Zigzag складе найкоротший маршрут, розкладе його по днях і
             порахує, скільки коштуватиме поїздка.
           </p>
           <div className="flex flex-wrap gap-3">

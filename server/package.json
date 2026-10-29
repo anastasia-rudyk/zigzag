@@ -1,7 +1,7 @@
 {
-  "name": "ukrroute-server",
+  "name": "zigzag-server",
   "version": "1.0.0",
-  "description": "UkrRoute — серверна частина (Node.js + Express + MongoDB)",
+  "description": "Zigzag — серверна частина (Node.js + Express + MongoDB)",
   "type": "module",
   "main": "src/index.js",
   "scripts": {

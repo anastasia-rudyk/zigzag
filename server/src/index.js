@@ -6,7 +6,7 @@ async function main() {
   await connectDB();
   const app = createApp();
   app.listen(config.port, () => {
-    console.log(`UkrRoute API працює на http://localhost:${config.port}`);
+    console.log(`Zigzag API працює на http://localhost:${config.port}`);
   });
 }
 

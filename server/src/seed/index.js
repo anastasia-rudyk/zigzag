@@ -16,7 +16,7 @@ async function seed() {
     locations.map(({ category, ...rest }) => ({ ...rest, categoryId: catBySlug[category] }))
   );
 
-  const adminEmail = 'admin@ukrroute.local';
+  const adminEmail = 'admin@zigzag.local';
   const adminPassword = process.env.SEED_ADMIN_PASSWORD || 'admin12345';
   if (!(await User.findOne({ email: adminEmail }))) {
     await User.create({
