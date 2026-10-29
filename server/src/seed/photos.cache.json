@@ -1,1 +1,722 @@
-{}
+{
+  "Говерла": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Hoverla_view.jpg/1280px-Hoverla_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 3888,
+    "height": 2592,
+    "title": "File:Hoverla view.jpg",
+    "credit": {
+      "author": "Діана Жураківська",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Hoverla_view.jpg"
+    }
+  },
+  "Піп Іван Чорногірський": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/%D0%A1%D1%82%D0%B0%D1%80%D0%B0_%D0%BE%D0%B1%D1%81%D0%B5%D1%80%D0%B2%D0%B0%D1%82%D0%BE%D1%80%D1%96%D1%8F_%D0%91%D1%96%D0%BB%D0%B8%D0%B9_%D1%81%D0%BB%D0%BE%D0%BD_%D0%BD%D0%B0_%D0%B3%D0%BE%D1%80%D1%96_%D0%9F%D1%96%D0%BF_%D0%86%D0%B2%D0%B0%D0%BD_%D0%A7%D0%BE%D1%80%D0%BD%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D1%8C%D0%BA%D0%B8%D0%B9.jpg/1280px-%D0%A1%D1%82%D0%B0%D1%80%D0%B0_%D0%BE%D0%B1%D1%81%D0%B5%D1%80%D0%B2%D0%B0%D1%82%D0%BE%D1%80%D1%96%D1%8F_%D0%91%D1%96%D0%BB%D0%B8%D0%B9_%D1%81%D0%BB%D0%BE%D0%BD_%D0%BD%D0%B0_%D0%B3%D0%BE%D1%80%D1%96_%D0%9F%D1%96%D0%BF_%D0%86%D0%B2%D0%B0%D0%BD_%D0%A7%D0%BE%D1%80%D0%BD%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D1%8C%D0%BA%D0%B8%D0%B9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 4600,
+    "height": 1916,
+    "title": "File:Стара обсерваторія Білий слон на горі Піп Іван Чорногорський.jpg",
+    "credit": {
+      "author": "Khoroshkov",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:%D0%A1%D1%82%D0%B0%D1%80%D0%B0_%D0%BE%D0%B1%D1%81%D0%B5%D1%80%D0%B2%D0%B0%D1%82%D0%BE%D1%80%D1%96%D1%8F_%D0%91%D1%96%D0%BB%D0%B8%D0%B9_%D1%81%D0%BB%D0%BE%D0%BD_%D0%BD%D0%B0_%D0%B3%D0%BE%D1%80%D1%96_%D0%9F%D1%96%D0%BF_%D0%86%D0%B2%D0%B0%D0%BD_%D0%A7%D0%BE%D1%80%D0%BD%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D1%8C%D0%BA%D0%B8%D0%B9.jpg"
+    }
+  },
+  "Петрос": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Ukraine-Petros_Mountain-7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "width": 1280,
+    "height": 960,
+    "title": "File:Ukraine-Petros Mountain-7.jpg",
+    "credit": {
+      "author": "Alex Zelenko",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Ukraine-Petros_Mountain-7.jpg"
+    }
+  },
+  "Пікуй": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Mount_Pikui_as_the_highest_mountain_in_Lviv_Oblast.JPG/1280px-Mount_Pikui_as_the_highest_mountain_in_Lviv_Oblast.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 2240,
+    "height": 959,
+    "title": "File:Mount Pikui as the highest mountain in Lviv Oblast.JPG",
+    "credit": {
+      "author": "Bogdan Kosar",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Mount_Pikui_as_the_highest_mountain_in_Lviv_Oblast.JPG"
+    }
+  },
+  "Хом’як": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Khomjak_and_way_to_Syniak.jpg/1280px-Khomjak_and_way_to_Syniak.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 6000,
+    "height": 4000,
+    "title": "File:Khomjak and way to Syniak.jpg",
+    "credit": {
+      "author": "Yupanka",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Khomjak_and_way_to_Syniak.jpg"
+    }
+  },
+  "Драгобрат": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Svydovec%2C_Drahobrat%2C_Gorgany.jpg/1280px-Svydovec%2C_Drahobrat%2C_Gorgany.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 3072,
+    "height": 2304,
+    "title": "File:Svydovec, Drahobrat, Gorgany.jpg",
+    "credit": {
+      "author": "Daniel Baránek",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Svydovec,_Drahobrat,_Gorgany.jpg"
+    }
+  },
+  "Озеро Синевир": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Lake_Synevyr.jpg/1280px-Lake_Synevyr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 4000,
+    "height": 2649,
+    "title": "File:Lake Synevyr.jpg",
+    "credit": {
+      "author": "Красноштан Василь Ігорович",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Lake_Synevyr.jpg"
+    }
+  },
+  "Озеро Світязь": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Jezioro_Swita%C5%BA%2C_Ukraina.JPG/1280px-Jezioro_Swita%C5%BA%2C_Ukraina.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 4320,
+    "height": 3240,
+    "title": "File:Jezioro Switaź, Ukraina.JPG",
+    "credit": {
+      "author": "Przemysław Woźnica",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Jezioro_Swita%C5%BA,_Ukraina.JPG"
+    }
+  },
+  "Водоспад Шипіт": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/21-224-5005_Shypit_Waterfall_RB_18.jpg/1280px-21-224-5005_Shypit_Waterfall_RB_18.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 6000,
+    "height": 4000,
+    "title": "File:21-224-5005 Shypit Waterfall RB 18.jpg",
+    "credit": {
+      "author": "Rbrechko",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:21-224-5005_Shypit_Waterfall_RB_18.jpg"
+    }
+  },
+  "Озеро Несамовите": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Nesamovyte_lake_silence.jpg/1280px-Nesamovyte_lake_silence.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 6016,
+    "height": 4000,
+    "title": "File:Nesamovyte lake silence.jpg",
+    "credit": {
+      "author": "Yur dmytruk",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Nesamovyte_lake_silence.jpg"
+    }
+  },
+  "Водоспад Пробій": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Probij-2.JPG/1280px-Probij-2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 3008,
+    "height": 2000,
+    "title": "File:Probij-2.JPG",
+    "credit": {
+      "author": "MSha",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "source": "https://commons.wikimedia.org/wiki/File:Probij-2.JPG"
+    }
+  },
+  "Манявський водоспад": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Maniava4.JPG/1280px-Maniava4.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 1984,
+    "height": 1488,
+    "title": "File:Maniava4.JPG",
+    "credit": {
+      "author": "Birczanin",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "source": "https://commons.wikimedia.org/wiki/File:Maniava4.JPG"
+    }
+  },
+  "Джуринський водоспад": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Dzhuryn_-_Waterfall_Chervonohorod.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "width": 1024,
+    "height": 768,
+    "title": "File:Dzhuryn - Waterfall Chervonohorod.jpg",
+    "credit": {
+      "author": "Petro Vlasenko",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Dzhuryn_-_Waterfall_Chervonohorod.jpg"
+    }
+  },
+  "Озеро Бребенескул": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Berbeneskul.JPG/1280px-Berbeneskul.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 2592,
+    "height": 1944,
+    "title": "File:Berbeneskul.JPG",
+    "credit": {
+      "author": "Мирослава Новікова",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Berbeneskul.JPG"
+    }
+  },
+  "Тузлівські лимани": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Tuzl_liman_%283%29.JPG/1280px-Tuzl_liman_%283%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 2272,
+    "height": 1704,
+    "title": "File:Tuzl liman (3).JPG",
+    "credit": {
+      "author": "Fantazer promo",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Tuzl_liman_(3).JPG"
+    }
+  },
+  "Затока": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Ukraine%2C_Odeska%2C_Zatoka%2C_%D0%97%D0%B0%D1%82%D0%BE%D0%BA%D0%B0_-_%D0%9D%D0%B5%D0%B4%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D0%B4%D0%BE%D0%BC_%D0%BE%D1%82%D0%B4%D1%8B%D1%85%D0%B0_WMID5072406.jpg/1280px-Ukraine%2C_Odeska%2C_Zatoka%2C_%D0%97%D0%B0%D1%82%D0%BE%D0%BA%D0%B0_-_%D0%9D%D0%B5%D0%B4%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D0%B4%D0%BE%D0%BC_%D0%BE%D1%82%D0%B4%D1%8B%D1%85%D0%B0_WMID5072406.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 5184,
+    "height": 3456,
+    "title": "File:Ukraine, Odeska, Zatoka, Затока - Недостроенный дом отдыха WMID5072406.jpg",
+    "credit": {
+      "author": "Anatolie",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Ukraine,_Odeska,_Zatoka,_%D0%97%D0%B0%D1%82%D0%BE%D0%BA%D0%B0_-_%D0%9D%D0%B5%D0%B4%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D0%B4%D0%BE%D0%BC_%D0%BE%D1%82%D0%B4%D1%8B%D1%85%D0%B0_WMID5072406.jpg"
+    }
+  },
+  "Дендропарк «Софіївка»": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/%D0%A3%D0%BC%D0%B0%D0%BD%D1%8C%2C_%D0%9F%D0%B0%D1%80%D0%BA_%C2%AB%D0%A1%D0%BE%D1%84%D1%96%D1%97%D0%B2%D0%BA%D0%B0%C2%BB%2C_%D0%A3%D1%80%D0%BE%D1%87%D0%B8%D1%89%D0%B5_%D0%97%D0%B2%D1%96%D1%80%D0%B8%D0%BD%D0%B5%D1%86%D1%8C.jpg/1280px-%D0%A3%D0%BC%D0%B0%D0%BD%D1%8C%2C_%D0%9F%D0%B0%D1%80%D0%BA_%C2%AB%D0%A1%D0%BE%D1%84%D1%96%D1%97%D0%B2%D0%BA%D0%B0%C2%BB%2C_%D0%A3%D1%80%D0%BE%D1%87%D0%B8%D1%89%D0%B5_%D0%97%D0%B2%D1%96%D1%80%D0%B8%D0%BD%D0%B5%D1%86%D1%8C.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 5472,
+    "height": 3648,
+    "title": "File:Умань, Парк «Софіївка», Урочище Звіринець.jpg",
+    "credit": {
+      "author": "Prymasal",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:%D0%A3%D0%BC%D0%B0%D0%BD%D1%8C,_%D0%9F%D0%B0%D1%80%D0%BA_%C2%AB%D0%A1%D0%BE%D1%84%D1%96%D1%97%D0%B2%D0%BA%D0%B0%C2%BB,_%D0%A3%D1%80%D0%BE%D1%87%D0%B8%D1%89%D0%B5_%D0%97%D0%B2%D1%96%D1%80%D0%B8%D0%BD%D0%B5%D1%86%D1%8C.jpg"
+    }
+  },
+  "Бакота": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Bakota.jpg/1280px-Bakota.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 1704,
+    "height": 2272,
+    "title": "File:Bakota.jpg",
+    "credit": {
+      "author": "http://pl.wikipedia.org/wiki/Wikipedysta:JoanM",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "source": "https://commons.wikimedia.org/wiki/File:Bakota.jpg"
+    }
+  },
+  "Тунель кохання": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Tunnel_of_love_01.jpg/1280px-Tunnel_of_love_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 2664,
+    "height": 4224,
+    "title": "File:Tunnel of love 01.jpg",
+    "credit": {
+      "author": "Дядя Саша",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Tunnel_of_love_01.jpg"
+    }
+  },
+  "Скелі Довбуша": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/%22Dovbush-rocks%22_14.JPG/1280px-%22Dovbush-rocks%22_14.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 3872,
+    "height": 2592,
+    "title": "File:\"Dovbush-rocks\" 14.JPG",
+    "credit": {
+      "author": "Taras r",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:%22Dovbush-rocks%22_14.JPG"
+    }
+  },
+  "Дендропарк «Олександрія»": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/%D0%9A%D0%BE%D0%BB%D0%BE%D0%BD%D0%B0%D0%B4%D0%B0_%22%D0%9B%D1%83%D0%BD%D0%B0%22%2C_%D0%B4%D0%B5%D0%BD%D0%B4%D1%80%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%87%D0%BD%D0%B8%D0%B9_%D0%BF%D0%B0%D1%80%D0%BA_%22%D0%9E%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D1%96%D1%8F%22%2C_%D0%BC._%D0%91%D1%96%D0%BB%D0%B0_%D0%A6%D0%B5%D1%80%D0%BA%D0%B2%D0%B0.jpg/1280px-%D0%9A%D0%BE%D0%BB%D0%BE%D0%BD%D0%B0%D0%B4%D0%B0_%22%D0%9B%D1%83%D0%BD%D0%B0%22%2C_%D0%B4%D0%B5%D0%BD%D0%B4%D1%80%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%87%D0%BD%D0%B8%D0%B9_%D0%BF%D0%B0%D1%80%D0%BA_%22%D0%9E%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D1%96%D1%8F%22%2C_%D0%BC._%D0%91%D1%96%D0%BB%D0%B0_%D0%A6%D0%B5%D1%80%D0%BA%D0%B2%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 14234,
+    "height": 6605,
+    "title": "File:Колонада \"Луна\", дендрологічний парк \"Олександрія\", м. Біла Церква.jpg",
+    "credit": {
+      "author": "Roman Naumov",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%BE%D0%BB%D0%BE%D0%BD%D0%B0%D0%B4%D0%B0_%22%D0%9B%D1%83%D0%BD%D0%B0%22,_%D0%B4%D0%B5%D0%BD%D0%B4%D1%80%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%87%D0%BD%D0%B8%D0%B9_%D0%BF%D0%B0%D1%80%D0%BA_%22%D0%9E%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D1%96%D1%8F%22,_%D0%BC._%D0%91%D1%96%D0%BB%D0%B0_%D0%A6%D0%B5%D1%80%D0%BA%D0%B2%D0%B0.jpg"
+    }
+  },
+  "Актовський каньйон": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/%D0%90%D0%BA%D1%82%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D0%BA%D0%B0%D0%BD%D1%8C%D0%BE%D0%BD.jpg/1280px-%D0%90%D0%BA%D1%82%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D0%BA%D0%B0%D0%BD%D1%8C%D0%BE%D0%BD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 3857,
+    "height": 2033,
+    "title": "File:Актовский каньон.jpg",
+    "credit": {
+      "author": "Сак Анастасія",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:%D0%90%D0%BA%D1%82%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D0%BA%D0%B0%D0%BD%D1%8C%D0%BE%D0%BD.jpg"
+    }
+  },
+  "Буцький каньйон": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Buky_Canyon%2C_Ukraine.jpg/1280px-Buky_Canyon%2C_Ukraine.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 4928,
+    "height": 3264,
+    "title": "File:Buky Canyon, Ukraine.jpg",
+    "credit": {
+      "author": "Kiyanka",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Buky_Canyon,_Ukraine.jpg"
+    }
+  },
+  "Ботанічний сад імені Гришка": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Lilacs_Gardens_in_Kyiv.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "width": 1182,
+    "height": 886,
+    "title": "File:Lilacs Gardens in Kyiv.jpg",
+    "credit": {
+      "author": "Qypchak",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Lilacs_Gardens_in_Kyiv.jpg"
+    }
+  },
+  "Кам’янець-Подільська фортеця": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Kamianets-Podilskyi_Castle_P1840618.jpg/1280px-Kamianets-Podilskyi_Castle_P1840618.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 3996,
+    "height": 3000,
+    "title": "File:Kamianets-Podilskyi Castle P1840618.jpg",
+    "credit": {
+      "author": "Posterrr",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Kamianets-Podilskyi_Castle_P1840618.jpg"
+    }
+  },
+  "Хотинська фортеця": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/73-250-0001_Khotyn_Fortress_RB_18.jpg/1280px-73-250-0001_Khotyn_Fortress_RB_18.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 6000,
+    "height": 4000,
+    "title": "File:73-250-0001 Khotyn Fortress RB 18.jpg",
+    "credit": {
+      "author": "Rbrechko",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:73-250-0001_Khotyn_Fortress_RB_18.jpg"
+    }
+  },
+  "Олеський замок": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/46-206-0015_Olesko_Castle_RB_24.jpg/1280px-46-206-0015_Olesko_Castle_RB_24.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 4048,
+    "height": 3032,
+    "title": "File:46-206-0015 Olesko Castle RB 24.jpg",
+    "credit": {
+      "author": "Rbrechko",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:46-206-0015_Olesko_Castle_RB_24.jpg"
+    }
+  },
+  "Підгорецький замок": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/%D0%9F%D1%96%D0%B4%D0%B3%D0%BE%D1%80%D0%B5%D1%86%D1%8C%D0%BA%D0%B8%D0%B9_%D0%B7%D0%B0%D0%BC%D0%BE%D0%BA_%D0%B7_%D0%BF%D0%BE%D0%B2%D1%96%D1%82%D1%80%D1%8F.jpg/1280px-%D0%9F%D1%96%D0%B4%D0%B3%D0%BE%D1%80%D0%B5%D1%86%D1%8C%D0%BA%D0%B8%D0%B9_%D0%B7%D0%B0%D0%BC%D0%BE%D0%BA_%D0%B7_%D0%BF%D0%BE%D0%B2%D1%96%D1%82%D1%80%D1%8F.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 4038,
+    "height": 3025,
+    "title": "File:Підгорецький замок з повітря.jpg",
+    "credit": {
+      "author": "Roman Bekas",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:%D0%9F%D1%96%D0%B4%D0%B3%D0%BE%D1%80%D0%B5%D1%86%D1%8C%D0%BA%D0%B8%D0%B9_%D0%B7%D0%B0%D0%BC%D0%BE%D0%BA_%D0%B7_%D0%BF%D0%BE%D0%B2%D1%96%D1%82%D1%80%D1%8F.jpg"
+    }
+  },
+  "Золочівський замок": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Zolochiv_Castle_01.jpg/1280px-Zolochiv_Castle_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 4128,
+    "height": 3096,
+    "title": "File:Zolochiv Castle 01.jpg",
+    "credit": {
+      "author": "Oleh Kushch",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Zolochiv_Castle_01.jpg"
+    }
+  },
+  "Меджибізька фортеця": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Medzhybizh_Castle_%28%D0%9C%D0%B5%D0%B4%D0%B6%D0%B8%D0%B1%D1%96%D0%B6%29.JPG/1280px-Medzhybizh_Castle_%28%D0%9C%D0%B5%D0%B4%D0%B6%D0%B8%D0%B1%D1%96%D0%B6%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 2816,
+    "height": 1584,
+    "title": "File:Medzhybizh Castle (Меджибіж).JPG",
+    "credit": {
+      "author": "Sofo",
+      "license": "GFDL",
+      "licenseUrl": "http://www.gnu.org/copyleft/fdl.html",
+      "source": "https://commons.wikimedia.org/wiki/File:Medzhybizh_Castle_(%D0%9C%D0%B5%D0%B4%D0%B6%D0%B8%D0%B1%D1%96%D0%B6).JPG"
+    }
+  },
+  "Луцький замок": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Lubart%27s_Castle_P1070989.jpg/1280px-Lubart%27s_Castle_P1070989.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 3000,
+    "height": 2216,
+    "title": "File:Lubart's Castle P1070989.jpg",
+    "credit": {
+      "author": "Posterrr",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Lubart%27s_Castle_P1070989.jpg"
+    }
+  },
+  "Замок Паланок": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Palanok.jpg/1280px-Palanok.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 2544,
+    "height": 1908,
+    "title": "File:Palanok.jpg",
+    "credit": {
+      "author": "alexjourba",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Palanok.jpg"
+    }
+  },
+  "Свірзький замок": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Swirsh_Castle_-_panoramio.jpg/1280px-Swirsh_Castle_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 1304,
+    "height": 867,
+    "title": "File:Swirsh Castle - panoramio.jpg",
+    "credit": {
+      "author": "Stanisław Ludwiński",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Swirsh_Castle_-_panoramio.jpg"
+    }
+  },
+  "Невицький замок": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Ukraine.Nevitske.Castle01.JPG/1280px-Ukraine.Nevitske.Castle01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 2048,
+    "height": 1536,
+    "title": "File:Ukraine.Nevitske.Castle01.JPG",
+    "credit": {
+      "author": "Plf16",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Ukraine.Nevitske.Castle01.JPG"
+    }
+  },
+  "Острозький замок": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/%D0%9E%D1%81%D1%82%D1%80%D0%BE%D0%B7%D1%8C%D0%BA%D0%B8%D0%B9_%D0%B7%D0%B0%D0%BC%D0%BE%D0%BA%2C_%D0%BA%D0%BE%D0%BB%D0%B8%D1%88%D0%BD%D1%8F_%D1%80%D0%B5%D0%B7%D0%B8%D0%B4%D0%B5%D0%BD%D1%86%D1%96%D1%8F_%D0%BA%D0%BD%D1%8F%D0%B7%D1%96%D0%B2_%D0%9E%D1%81%D1%82%D1%80%D0%BE%D0%B7%D1%8C%D0%BA%D0%B8%D1%85.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "width": 1200,
+    "height": 900,
+    "title": "File:Острозький замок, колишня резиденція князів Острозьких.JPG",
+    "credit": {
+      "author": "Троханчук",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:%D0%9E%D1%81%D1%82%D1%80%D0%BE%D0%B7%D1%8C%D0%BA%D0%B8%D0%B9_%D0%B7%D0%B0%D0%BC%D0%BE%D0%BA,_%D0%BA%D0%BE%D0%BB%D0%B8%D1%88%D0%BD%D1%8F_%D1%80%D0%B5%D0%B7%D0%B8%D0%B4%D0%B5%D0%BD%D1%86%D1%96%D1%8F_%D0%BA%D0%BD%D1%8F%D0%B7%D1%96%D0%B2_%D0%9E%D1%81%D1%82%D1%80%D0%BE%D0%B7%D1%8C%D0%BA%D0%B8%D1%85.JPG"
+    }
+  },
+  "Дубенський замок": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Dubno_castle%2C_Rivne_Oblast_%283%29.jpg/1280px-Dubno_castle%2C_Rivne_Oblast_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 4163,
+    "height": 2775,
+    "title": "File:Dubno castle, Rivne Oblast (3).jpg",
+    "credit": {
+      "author": "Xsandriel",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Dubno_castle,_Rivne_Oblast_(3).jpg"
+    }
+  },
+  "Збаразький замок": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/61-224-0001_Zbarazh_Castle_RB.jpg/1280px-61-224-0001_Zbarazh_Castle_RB.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 3000,
+    "height": 1993,
+    "title": "File:61-224-0001 Zbarazh Castle RB.jpg",
+    "credit": {
+      "author": "Rbrechko",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:61-224-0001_Zbarazh_Castle_RB.jpg"
+    }
+  },
+  "Бережанський замок": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Berezhany_Castle_1_RB.jpg/1280px-Berezhany_Castle_1_RB.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 1800,
+    "height": 1196,
+    "title": "File:Berezhany Castle 1 RB.jpg",
+    "credit": {
+      "author": "Rbrechko",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Berezhany_Castle_1_RB.jpg"
+    }
+  },
+  "Аккерманська фортеця": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Akkerman-fortress-aerial-4.jpg/1280px-Akkerman-fortress-aerial-4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 4000,
+    "height": 3000,
+    "title": "File:Akkerman-fortress-aerial-4.jpg",
+    "credit": {
+      "author": "Alexey M.",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Akkerman-fortress-aerial-4.jpg"
+    }
+  },
+  "Наскельна фортеця Тустань": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Tustan%27_May5.jpg/1280px-Tustan%27_May5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 6016,
+    "height": 4000,
+    "title": "File:Tustan' May5.jpg",
+    "credit": {
+      "author": "Yur dmytruk",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Tustan%27_May5.jpg"
+    }
+  },
+  "Червоногородський замок": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Chervonohorod_Castle_01.jpg/1280px-Chervonohorod_Castle_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 4128,
+    "height": 3096,
+    "title": "File:Chervonohorod Castle 01.jpg",
+    "credit": {
+      "author": "Oleh Kushch",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Chervonohorod_Castle_01.jpg"
+    }
+  },
+  "Замок Радзивіллів в Олиці": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Olyka6.JPG/1280px-Olyka6.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 2304,
+    "height": 1728,
+    "title": "File:Olyka6.JPG",
+    "credit": {
+      "author": "Szeder László",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Olyka6.JPG"
+    }
+  },
+  "Резиденція буковинських митрополитів": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/%D0%A0%D0%B5%D0%B7%D0%B8%D0%B4%D0%B5%D0%BD%D1%86%D1%96%D1%8F_%D0%BC%D0%B8%D1%82%D1%80%D0%BE%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D1%96%D0%B2_%D0%91%D1%83%D0%BA%D0%BE%D0%B2%D0%B8%D0%BD%D0%B8_%D1%96_%D0%94%D0%B0%D0%BB%D0%BC%D0%B0%D1%86%D1%96%D1%97_1.jpg/1280px-%D0%A0%D0%B5%D0%B7%D0%B8%D0%B4%D0%B5%D0%BD%D1%86%D1%96%D1%8F_%D0%BC%D0%B8%D1%82%D1%80%D0%BE%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D1%96%D0%B2_%D0%91%D1%83%D0%BA%D0%BE%D0%B2%D0%B8%D0%BD%D0%B8_%D1%96_%D0%94%D0%B0%D0%BB%D0%BC%D0%B0%D1%86%D1%96%D1%97_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 3839,
+    "height": 2152,
+    "title": "File:Резиденція митрополитів Буковини і Далмації 1.jpg",
+    "credit": {
+      "author": "Oleksandr Malyon",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:%D0%A0%D0%B5%D0%B7%D0%B8%D0%B4%D0%B5%D0%BD%D1%86%D1%96%D1%8F_%D0%BC%D0%B8%D1%82%D1%80%D0%BE%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D1%96%D0%B2_%D0%91%D1%83%D0%BA%D0%BE%D0%B2%D0%B8%D0%BD%D0%B8_%D1%96_%D0%94%D0%B0%D0%BB%D0%BC%D0%B0%D1%86%D1%96%D1%97_1.jpg"
+    }
+  },
+  "Львівська опера": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Lviv_Opera_House.jpg/1280px-Lviv_Opera_House.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 3811,
+    "height": 3192,
+    "title": "File:Lviv Opera House.jpg",
+    "credit": {
+      "author": "Skelanard",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Lviv_Opera_House.jpg"
+    }
+  },
+  "Палац у Качанівці": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Kachanovka_palace.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "width": 800,
+    "height": 600,
+    "title": "File:Kachanovka palace.JPG",
+    "credit": {
+      "author": "uk:User:Kamelot",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "source": "https://commons.wikimedia.org/wiki/File:Kachanovka_palace.JPG"
+    }
+  },
+  "Вірменський собор і Вірменська вулиця": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Ukraine-Lviv-Armenian_Church-14.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "width": 960,
+    "height": 1280,
+    "title": "File:Ukraine-Lviv-Armenian Church-14.jpg",
+    "credit": {
+      "author": "Alex Zelenko",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Ukraine-Lviv-Armenian_Church-14.jpg"
+    }
+  },
+  "Києво-Печерська лавра": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Kyiv_Pechersk_Lavra_View_from_the_Dnieper_River.jpg/1280px-Kyiv_Pechersk_Lavra_View_from_the_Dnieper_River.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 3987,
+    "height": 2960,
+    "title": "File:Kyiv Pechersk Lavra View from the Dnieper River.jpg",
+    "credit": {
+      "author": "Ввласенко",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Kyiv_Pechersk_Lavra_View_from_the_Dnieper_River.jpg"
+    }
+  },
+  "Софія Київська": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/80-391-0151_Kyiv_St.Sophia%27s_Cathedral_RB_18_2_%28cropped%29.jpg/1280px-80-391-0151_Kyiv_St.Sophia%27s_Cathedral_RB_18_2_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 4800,
+    "height": 3603,
+    "title": "File:80-391-0151 Kyiv St.Sophia's Cathedral RB 18 2 (cropped).jpg",
+    "credit": {
+      "author": "Rbrechko",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:80-391-0151_Kyiv_St.Sophia%27s_Cathedral_RB_18_2_(cropped).jpg"
+    }
+  },
+  "Андріївська церква": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/%D0%90%D0%BD%D0%B4%D1%80%D1%96%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%B0_%D1%86%D0%B5%D1%80%D0%BA%D0%B2%D0%B0_%D0%BD%D0%B0_%D1%81%D0%B2%D1%96%D1%82%D0%B0%D0%BD%D0%BA%D1%83.jpg/1280px-%D0%90%D0%BD%D0%B4%D1%80%D1%96%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%B0_%D1%86%D0%B5%D1%80%D0%BA%D0%B2%D0%B0_%D0%BD%D0%B0_%D1%81%D0%B2%D1%96%D1%82%D0%B0%D0%BD%D0%BA%D1%83.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 4453,
+    "height": 2969,
+    "title": "File:Андріївська церква на світанку.jpg",
+    "credit": {
+      "author": "Maksym Popelnyukh",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:%D0%90%D0%BD%D0%B4%D1%80%D1%96%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%B0_%D1%86%D0%B5%D1%80%D0%BA%D0%B2%D0%B0_%D0%BD%D0%B0_%D1%81%D0%B2%D1%96%D1%82%D0%B0%D0%BD%D0%BA%D1%83.jpg"
+    }
+  },
+  "Одеський оперний театр": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Odessa_Opera_and_Ballet_Theater_P1250978.jpg/1280px-Odessa_Opera_and_Ballet_Theater_P1250978.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 3960,
+    "height": 2627,
+    "title": "File:Odessa Opera and Ballet Theater P1250978.jpg",
+    "credit": {
+      "author": "Posterrr",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Odessa_Opera_and_Ballet_Theater_P1250978.jpg"
+    }
+  },
+  "Потьомкінські сходи": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Potemkin_stairs%2C_Odessa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "width": 1280,
+    "height": 960,
+    "title": "File:Potemkin stairs, Odessa.jpg",
+    "credit": {
+      "author": "DIMSFIKAS",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Potemkin_stairs,_Odessa.jpg"
+    }
+  },
+  "Почаївська лавра": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/1._%D0%9F%D0%BE%D1%87%D0%B0%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%B0_%D0%BB%D0%B0%D0%B2%D1%80%D0%B0.JPG/1280px-1._%D0%9F%D0%BE%D1%87%D0%B0%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%B0_%D0%BB%D0%B0%D0%B2%D1%80%D0%B0.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 3648,
+    "height": 2736,
+    "title": "File:1. Почаївська лавра.JPG",
+    "credit": {
+      "author": "Folkerman",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:1._%D0%9F%D0%BE%D1%87%D0%B0%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%B0_%D0%BB%D0%B0%D0%B2%D1%80%D0%B0.JPG"
+    }
+  },
+  "Церква святого Юра в Дрогобичі": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/%D0%A6%D0%B5%D1%80%D0%BA%D0%B2%D0%B0_%D1%81%D0%B2%D1%8F%D1%82%D0%BE%D0%B3%D0%BE_%D0%AE%D1%80%D0%B0%2C_%D0%94%D1%80%D0%BE%D0%B3%D0%BE%D0%B1%D0%B8%D1%87.JPG/1280px-%D0%A6%D0%B5%D1%80%D0%BA%D0%B2%D0%B0_%D1%81%D0%B2%D1%8F%D1%82%D0%BE%D0%B3%D0%BE_%D0%AE%D1%80%D0%B0%2C_%D0%94%D1%80%D0%BE%D0%B3%D0%BE%D0%B1%D0%B8%D1%87.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 2592,
+    "height": 1944,
+    "title": "File:Церква святого Юра, Дрогобич.JPG",
+    "credit": {
+      "author": "Роман Тустановський",
+      "license": "GFDL",
+      "licenseUrl": "http://www.gnu.org/copyleft/fdl.html",
+      "source": "https://commons.wikimedia.org/wiki/File:%D0%A6%D0%B5%D1%80%D0%BA%D0%B2%D0%B0_%D1%81%D0%B2%D1%8F%D1%82%D0%BE%D0%B3%D0%BE_%D0%AE%D1%80%D0%B0,_%D0%94%D1%80%D0%BE%D0%B3%D0%BE%D0%B1%D0%B8%D1%87.JPG"
+    }
+  },
+  "Вишнівецький палац": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Wisniowiec12.JPG/1280px-Wisniowiec12.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 2048,
+    "height": 1536,
+    "title": "File:Wisniowiec12.JPG",
+    "credit": {
+      "author": "Tomasz Leśniowski",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Wisniowiec12.JPG"
+    }
+  },
+  "Фонтан Roshen у Вінниці": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/ROSHEN_Fountain_2015_%2802%29.JPG/1280px-ROSHEN_Fountain_2015_%2802%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 3696,
+    "height": 2448,
+    "title": "File:ROSHEN Fountain 2015 (02).JPG",
+    "credit": {
+      "author": "Visem",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:ROSHEN_Fountain_2015_(02).JPG"
+    }
+  },
+  "Площа Ринок і львівські кав’ярні": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Lviv_Market_Square_16.jpg/1280px-Lviv_Market_Square_16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 1864,
+    "height": 2816,
+    "title": "File:Lviv Market Square 16.jpg",
+    "credit": {
+      "author": "NickK",
+      "license": "GFDL",
+      "licenseUrl": "http://www.gnu.org/copyleft/fdl.html",
+      "source": "https://commons.wikimedia.org/wiki/File:Lviv_Market_Square_16.jpg"
+    }
+  },
+  "Сироварня в Нижньому Селищі": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/N_selishe.JPG/1280px-N_selishe.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 2048,
+    "height": 1536,
+    "title": "File:N selishe.JPG",
+    "credit": {
+      "author": "C.Смирнов",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:N_selishe.JPG"
+    }
+  },
+  "Шабо: центр культури вина": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/%D0%A6%D0%B5%D0%BD%D1%82%D1%80_%D0%BA%D1%83%D0%BB%D1%8C%D1%82%D1%83%D1%80%D1%8B_%D0%B2%D0%B8%D0%BD%D0%B0_%D0%A8%D0%B0%D0%B1%D0%BE.jpg/1280px-%D0%A6%D0%B5%D0%BD%D1%82%D1%80_%D0%BA%D1%83%D0%BB%D1%8C%D1%82%D1%83%D1%80%D1%8B_%D0%B2%D0%B8%D0%BD%D0%B0_%D0%A8%D0%B0%D0%B1%D0%BE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 4256,
+    "height": 2832,
+    "title": "File:Центр культуры вина Шабо.jpg",
+    "credit": {
+      "author": "Brutilation",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:%D0%A6%D0%B5%D0%BD%D1%82%D1%80_%D0%BA%D1%83%D0%BB%D1%8C%D1%82%D1%83%D1%80%D1%8B_%D0%B2%D0%B8%D0%BD%D0%B0_%D0%A8%D0%B0%D0%B1%D0%BE.jpg"
+    }
+  },
+  "Шато Чизай": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/ChateauChizay_vineyards_16.jpg/1280px-ChateauChizay_vineyards_16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 5464,
+    "height": 3070,
+    "title": "File:ChateauChizay vineyards 16.jpg",
+    "credit": {
+      "author": "Gorinetskiy",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:ChateauChizay_vineyards_16.jpg"
+    }
+  },
+  "Ринок Привоз": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Privoz_market_in_Odessa.JPG/1280px-Privoz_market_in_Odessa.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 2067,
+    "height": 1550,
+    "title": "File:Privoz market in Odessa.JPG",
+    "credit": {
+      "author": "Garik 11",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "source": "https://commons.wikimedia.org/wiki/File:Privoz_market_in_Odessa.JPG"
+    }
+  }
+}

@@ -68,6 +68,7 @@ export function scorePhoto(photo, keywords = []) {
 async function api(params, fetchImpl) {
   const url = new URL(API);
   Object.entries({
+    action: 'query',
     format: 'json',
     formatversion: '2',
     prop: 'imageinfo',
