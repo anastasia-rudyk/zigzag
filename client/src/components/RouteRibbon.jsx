@@ -15,22 +15,22 @@ export default function RouteRibbon({ stops, legs = [], roundTrip = false }) {
         const isEdge = i === 0 || i === items.length - 1;
         const leg = legs[i];
         return (
-          <li key={`${stop.name}-${i}`} className="relative pb-1 pl-9">
+          <li key={`${stop.name}-${i}`} className="relative pb-1 pl-10">
             {i < items.length - 1 && (
-              <span className="absolute left-[11px] top-6 h-full w-0.5 bg-route" aria-hidden="true" />
+              <span className="absolute left-[13px] top-7 h-full w-0.5 bg-route" aria-hidden="true" />
             )}
             <span
-              className={`absolute left-0 top-1 flex h-6 w-6 items-center justify-center rounded-full border-2 text-[11px] font-bold ${
-                isEdge ? 'border-ink bg-ink text-white' : 'border-route bg-white text-route-dark'
+              className={`absolute left-0 top-0.5 flex h-7 w-7 items-center justify-center rounded-full border-2 text-xs font-bold ${
+                isEdge ? 'border-white bg-white text-night' : 'border-route bg-night text-route-light'
               }`}
               aria-hidden="true"
             >
-              {i === 0 ? 'S' : roundTrip && i === items.length - 1 ? 'S' : i}
+              {i === 0 || (roundTrip && i === items.length - 1) ? 'S' : i}
             </span>
             <p className="font-semibold leading-tight">{stop.name}</p>
-            {stop.note && <p className="text-xs text-slate-soft">{stop.note}</p>}
+            {stop.note && <p className="text-xs text-mist">{stop.note}</p>}
             {i < items.length - 1 && (
-              <p className="py-2 text-xs font-semibold text-route-dark">{leg !== undefined ? formatKm(leg) : ''}</p>
+              <p className="py-2 text-xs font-bold text-route-light">{leg !== undefined ? formatKm(leg) : ''}</p>
             )}
           </li>
         );

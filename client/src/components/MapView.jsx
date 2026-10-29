@@ -10,15 +10,15 @@ function FitBounds({ points }) {
   const key = points.map((p) => `${p[0]},${p[1]}`).join('|');
   useEffect(() => {
     if (points.length === 1) map.setView(points[0], 10);
-    else if (points.length > 1) map.fitBounds(points, { padding: [32, 32] });
+    else if (points.length > 1) map.fitBounds(points, { padding: [36, 36] });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [key]);
   return null;
 }
 
 /**
- * Інтерактивна карта. Використовується в каталозі, на сторінці локації,
- * у конструкторі маршруту та на сторінці збереженої подорожі.
+ * Інтерактивна карта з темною підкладкою. Використовується в каталозі, на сторінці
+ * локації, у конструкторі маршруту та на сторінці збереженої подорожі.
  *
  * locations   — маркери локацій
  * selectedIds — виділені маркери (обрані для подорожі)
@@ -44,18 +44,19 @@ export default function MapView({
   ];
 
   return (
-    <div style={{ height }} className="overflow-hidden rounded-xl border border-line">
+    <div style={{ height }} className="overflow-hidden rounded-2xl border border-white/15 shadow-glass">
       <MapContainer center={UKRAINE_CENTER} zoom={6} scrollWheelZoom style={{ height: '100%', width: '100%' }}>
         <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
+          url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
+          subdomains="abcd"
         />
         {fit && <FitBounds points={allPoints} />}
 
         {line && line.length > 1 && (
           <>
-            <Polyline positions={line} pathOptions={{ color: '#ffffff', weight: 7, opacity: 0.9 }} />
-            <Polyline positions={line} pathOptions={{ color: '#E8590C', weight: 4 }} />
+            <Polyline positions={line} pathOptions={{ color: '#FF7A2F', weight: 10, opacity: 0.25 }} />
+            <Polyline positions={line} pathOptions={{ color: '#FF7A2F', weight: 4 }} />
           </>
         )}
 
@@ -63,7 +64,7 @@ export default function MapView({
           <CircleMarker
             center={[start.lat, start.lng]}
             radius={10}
-            pathOptions={{ color: '#ffffff', weight: 3, fillColor: '#1B2A2F', fillOpacity: 1 }}
+            pathOptions={{ color: '#0D1A16', weight: 3, fillColor: '#FFFFFF', fillOpacity: 1 }}
           >
             <Tooltip direction="top" offset={[0, -8]}>
               Старт: {start.name}
@@ -78,12 +79,12 @@ export default function MapView({
             <CircleMarker
               key={loc._id}
               center={[loc.lat, loc.lng]}
-              radius={isSel ? 9 : 7}
+              radius={isSel ? 9 : 6}
               pathOptions={{
-                color: '#ffffff',
+                color: isSel ? '#FFFFFF' : '#0D1A16',
                 weight: 2,
-                fillColor: isSel ? '#E8590C' : toneOf(loc.categoryId).band,
-                fillOpacity: isSel ? 1 : 0.75,
+                fillColor: isSel ? '#FF7A2F' : toneOf(loc.categoryId).color,
+                fillOpacity: isSel ? 1 : 0.85,
               }}
               eventHandlers={onMarkerClick ? { click: () => onMarkerClick(loc) } : undefined}
             >

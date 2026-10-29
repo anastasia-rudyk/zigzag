@@ -1,15 +1,22 @@
-/** Панель фільтрів каталогу: пошук, область, категорія, ціна, сортування */
-export default function FilterBar({ filters, onChange, categories = [], regions = [], onReset }) {
+import Icon from './Icon.jsx';
+
+/** Панель фільтрів каталогу: пошук, область, ціна, сортування */
+export default function FilterBar({ filters, onChange, regions = [], onReset }) {
   const set = (key) => (e) => onChange({ ...filters, [key]: e.target.value });
 
   return (
-    <form className="panel space-y-4 p-4" onSubmit={(e) => e.preventDefault()} role="search">
-      <div>
-        <label className="label" htmlFor="f-q">Пошук</label>
-        <input id="f-q" className="input" placeholder="Замок, озеро, вершина…" value={filters.q} onChange={set('q')} />
+    <form
+      className="glass grid gap-3 p-3 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr_auto] lg:items-end"
+      onSubmit={(e) => e.preventDefault()}
+      role="search"
+    >
+      <div className="relative">
+        <label className="sr-only" htmlFor="f-q">Пошук</label>
+        <Icon name="search" size={18} className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-mist" />
+        <input id="f-q" className="input pl-10" placeholder="Замок, озеро, вершина…" value={filters.q} onChange={set('q')} />
       </div>
       <div>
-        <label className="label" htmlFor="f-region">Область</label>
+        <label className="sr-only" htmlFor="f-region">Область</label>
         <select id="f-region" className="input" value={filters.region} onChange={set('region')}>
           <option value="">Усі області</option>
           {regions.map((r) => (
@@ -17,53 +24,26 @@ export default function FilterBar({ filters, onChange, categories = [], regions 
           ))}
         </select>
       </div>
-      <fieldset>
-        <legend className="label">Категорія</legend>
-        <div className="flex flex-wrap gap-2">
-          {[{ _id: '', name: 'Усі', icon: '' }, ...categories].map((c) => {
-            const active = filters.category === c._id;
-            return (
-              <button
-                key={c._id || 'all'}
-                type="button"
-                onClick={() => onChange({ ...filters, category: c._id })}
-                aria-pressed={active}
-                className={`rounded-full border px-3 py-1 text-sm font-semibold ${
-                  active ? 'border-fir bg-fir text-white' : 'border-line bg-white hover:border-fir'
-                }`}
-              >
-                {c.icon && <span aria-hidden="true">{c.icon} </span>}
-                {c.name}
-              </button>
-            );
-          })}
-        </div>
-      </fieldset>
       <div>
-        <label className="label" htmlFor="f-price">
-          Вхід до {filters.maxPrice === '' ? 'будь-якої ціни' : `${filters.maxPrice} грн`}
-        </label>
-        <input
-          id="f-price"
-          type="range"
-          min="0"
-          max="500"
-          step="50"
-          value={filters.maxPrice === '' ? 500 : filters.maxPrice}
-          onChange={(e) => onChange({ ...filters, maxPrice: e.target.value === '500' ? '' : e.target.value })}
-          className="w-full accent-fir"
-        />
+        <label className="sr-only" htmlFor="f-price">Ціна квитка</label>
+        <select id="f-price" className="input" value={filters.maxPrice} onChange={set('maxPrice')}>
+          <option value="">Будь-яка ціна</option>
+          <option value="0">Безкоштовні</option>
+          <option value="100">До 100 грн</option>
+          <option value="200">До 200 грн</option>
+        </select>
       </div>
       <div>
-        <label className="label" htmlFor="f-sort">Сортування</label>
+        <label className="sr-only" htmlFor="f-sort">Сортування</label>
         <select id="f-sort" className="input" value={filters.sort} onChange={set('sort')}>
+          <option value="rating">Спочатку найкращі</option>
           <option value="name">За назвою</option>
           <option value="region">За областю</option>
           <option value="price">Спочатку дешевші</option>
         </select>
       </div>
-      <button type="button" onClick={onReset} className="text-sm font-semibold text-fir hover:underline">
-        Скинути фільтри
+      <button type="button" onClick={onReset} className="rounded-full px-4 py-2 text-sm font-bold text-route-light hover:bg-white/10">
+        Скинути
       </button>
     </form>
   );

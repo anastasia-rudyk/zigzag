@@ -4,12 +4,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        ink: '#1B2A2F', // основний текст
-        fir: { DEFAULT: '#1F5E4A', dark: '#164536', light: '#DCEBE5' }, // карпатська ялина
-        route: { DEFAULT: '#E8590C', dark: '#C2480A', light: '#FDE8DA' }, // лінія маршруту
-        mist: '#EEF3F2', // фон
-        line: '#CBD8D5', // межі
-        slate: { soft: '#5B6E73' }, // другорядний текст
+        night: '#0D1A16', // фон: нічний карпатський ліс
+        ink: '#F2F5F3', // основний текст
+        mist: '#A9BDB5', // другорядний текст
+        route: { DEFAULT: '#FF7A2F', dark: '#E5621A', light: '#FFB27F' }, // лінія маршруту, головні дії
+        fir: { DEFAULT: '#2F8F68', dark: '#22704F', light: '#8FD9B6' }, // карпатська ялина
+        gold: '#F5C451', // зірки рейтингу
       },
       fontFamily: {
         display: ['Unbounded', 'system-ui', 'sans-serif'],
@@ -17,6 +17,9 @@ export default {
       },
       maxWidth: {
         page: '1200px',
+      },
+      boxShadow: {
+        glass: '0 20px 60px -20px rgba(0, 0, 0, 0.55)',
       },
     },
   },

@@ -64,6 +64,10 @@ export const api = {
   updateLocation: (id, data) => request(`/locations/${id}`, { method: 'PUT', body: data }),
   deleteLocation: (id) => request(`/locations/${id}`, { method: 'DELETE' }),
 
+  reviews: (locationId) => request('/reviews', { query: { location: locationId } }),
+  saveReview: (locationId, rating, text) => request('/reviews', { method: 'POST', body: { locationId, rating, text } }),
+  deleteReview: (id) => request(`/reviews/${id}`, { method: 'DELETE' }),
+
   buildTrip: (data) => request('/trips/build', { method: 'POST', body: data }),
   saveTrip: (data) => request('/trips', { method: 'POST', body: data }),
   trips: () => request('/trips'),

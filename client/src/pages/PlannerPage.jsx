@@ -12,6 +12,7 @@ import { api } from '../api/client.js';
 import { useAsync } from '../api/useAsync.js';
 import { useTrip } from '../context/TripContext.jsx';
 import { useAuth } from '../context/AuthContext.jsx';
+import { useBackdrop } from '../context/BackdropContext.jsx';
 import { formatMinutes, pluralDays } from '../utils/format.js';
 
 const PRICE_FIELDS = [
@@ -49,8 +50,10 @@ export default function PlannerPage() {
     setResult(null);
   }, [selected, form, prices]);
 
-  const start = meta?.startCities.find((c) => c.name === form.startCity);
   const chosen = selected.map((id) => byId[id]).filter(Boolean);
+  useBackdrop(chosen.find((l) => l.photos?.length)?.photos[0]);
+
+  const start = meta?.startCities.find((c) => c.name === form.startCity);
   const set = (key, cast = (v) => v) => (e) =>
     setForm((f) => ({ ...f, [key]: cast(e.target.type === 'checkbox' ? e.target.checked : e.target.value) }));
 
@@ -107,43 +110,43 @@ export default function PlannerPage() {
   return (
     <div className="page">
       <div className="mb-6">
-        <h1 className="text-3xl font-bold">Конструктор подорожі</h1>
-        <p className="text-slate-soft">Натискайте на маркери карти, щоб додати або прибрати місця.</p>
+        <h1 className="text-3xl font-bold sm:text-5xl">Конструктор маршруту</h1>
+        <p className="mt-2 text-mist">Натискайте на маркери карти, щоб додати або прибрати місця.</p>
       </div>
 
       <div className="grid gap-6 lg:grid-cols-[400px_1fr]">
         <div className="space-y-6">
-          <section className="panel p-4" aria-labelledby="sel">
+          <section className="glass p-4" aria-labelledby="sel">
             <div className="mb-3 flex items-baseline justify-between">
-              <h2 id="sel" className="text-base font-medium">
+              <h2 id="sel" className="text-base font-bold">
                 {result ? 'Оптимальний порядок' : 'Обрані місця'} ({chosen.length})
               </h2>
               {chosen.length > 0 && (
-                <button onClick={clear} className="text-sm font-semibold text-slate-soft hover:text-ink">
+                <button onClick={clear} className="text-sm font-bold text-mist hover:text-ink">
                   Очистити
                 </button>
               )}
             </div>
             {chosen.length === 0 ? (
-              <EmptyState title="Подорож порожня" text="Додайте місця з каталогу або натисніть на маркери карти." action="Відкрити каталог" to="/catalog" />
+              <EmptyState title="Маршрут порожній" text="Додайте місця з каталогу або натисніть на маркери карти." action="Відкрити каталог" to="/catalog" />
             ) : (
               <div className="space-y-2">
                 {ordered.map((l, i) => (
-                  <LocationCard key={l._id} location={l} compact index={result ? i + 1 : undefined} onRemove={remove} />
+                  <LocationCard key={l._id} location={l} index={result ? i + 1 : undefined} onRemove={remove} />
                 ))}
               </div>
             )}
           </section>
 
           <form
-            className="panel space-y-4 p-4"
+            className="glass space-y-4 p-4"
             onSubmit={(e) => {
               e.preventDefault();
               build();
             }}
             aria-labelledby="params"
           >
-            <h2 id="params" className="text-base font-medium">Параметри</h2>
+            <h2 id="params" className="text-base font-bold">Параметри</h2>
             <div>
               <label className="label" htmlFor="p-start">Місто старту</label>
               <select id="p-start" className="input" value={form.startCity} onChange={set('startCity')}>
@@ -164,9 +167,14 @@ export default function PlannerPage() {
             </div>
             <fieldset>
               <legend className="label">Транспорт</legend>
-              <div className="grid grid-cols-2 gap-2">
+              <div className="grid grid-cols-2 gap-1 rounded-full border border-white/20 p-1">
                 {[['car', 'Автомобіль'], ['bus', 'Автобус']].map(([v, label]) => (
-                  <label key={v} className={`cursor-pointer rounded-lg border px-3 py-2 text-center text-sm font-semibold ${form.transport === v ? 'border-fir bg-fir-light text-fir-dark' : 'border-line bg-white'}`}>
+                  <label
+                    key={v}
+                    className={`cursor-pointer rounded-full px-3 py-2 text-center text-sm font-bold transition-colors ${
+                      form.transport === v ? 'bg-white text-night' : 'hover:bg-white/10'
+                    }`}
+                  >
                     <input type="radio" name="transport" value={v} checked={form.transport === v} onChange={set('transport')} className="sr-only" />
                     {label}
                   </label>
@@ -174,19 +182,19 @@ export default function PlannerPage() {
               </div>
             </fieldset>
             <label className="flex items-center gap-2 text-sm">
-              <input type="checkbox" checked={form.roundTrip} onChange={set('roundTrip')} className="h-4 w-4 accent-fir" />
+              <input type="checkbox" checked={form.roundTrip} onChange={set('roundTrip')} className="h-4 w-4 accent-route" />
               Повернутися до міста старту
             </label>
 
             <div>
-              <button type="button" className="text-sm font-semibold text-fir hover:underline" onClick={() => setShowPrices((s) => !s)} aria-expanded={showPrices}>
+              <button type="button" className="text-sm font-bold text-route-light hover:underline" onClick={() => setShowPrices((s) => !s)} aria-expanded={showPrices}>
                 {showPrices ? 'Сховати ціни' : 'Змінити ціни для розрахунку бюджету'}
               </button>
               {showPrices && prices && (
                 <div className="mt-3 space-y-2">
                   {PRICE_FIELDS.map(([key, label]) => (
                     <div key={key} className="grid grid-cols-[1fr_96px] items-center gap-2">
-                      <label htmlFor={`pr-${key}`} className="text-sm">{label}</label>
+                      <label htmlFor={`pr-${key}`} className="text-sm text-mist">{label}</label>
                       <input id={`pr-${key}`} type="number" min="0" step="any" className="input py-1" value={prices[key]} onChange={(e) => setPrices((p) => ({ ...p, [key]: Number(e.target.value) }))} />
                     </div>
                   ))}
@@ -199,11 +207,11 @@ export default function PlannerPage() {
                 {building ? 'Будуємо маршрут…' : 'Побудувати маршрут'}
               </Button>
             ) : (
-              <div className="rounded-lg bg-mist p-3 text-sm">
+              <p className="rounded-2xl bg-white/[0.06] p-3 text-sm">
                 Щоб побудувати маршрут,{' '}
-                <Link to="/login" state={{ from: '/planner' }} className="font-semibold text-fir underline">увійдіть</Link> або{' '}
-                <Link to="/register" state={{ from: '/planner' }} className="font-semibold text-fir underline">зареєструйтеся</Link>.
-              </div>
+                <Link to="/login" state={{ from: '/planner' }} className="font-bold text-route-light underline">увійдіть</Link> або{' '}
+                <Link to="/register" state={{ from: '/planner' }} className="font-bold text-route-light underline">зареєструйтеся</Link>.
+              </p>
             )}
             <ErrorNote error={error} />
           </form>
@@ -217,7 +225,7 @@ export default function PlannerPage() {
             start={start}
             line={line}
             onMarkerClick={(l) => toggle(l._id)}
-            height={result ? 440 : 620}
+            height={result ? 440 : 640}
             fit={Boolean(result)}
             fitPoints={line || undefined}
           />
@@ -228,13 +236,13 @@ export default function PlannerPage() {
             <section className="space-y-6" aria-labelledby="res">
               <h2 id="res" className="sr-only">Результат</h2>
               {result.warnings.map((w) => (
-                <p key={w} className="rounded-lg border border-route bg-route-light/50 p-3 text-sm" role="status">{w}</p>
+                <p key={w} className="rounded-2xl border border-route/60 bg-route/10 p-3 text-sm" role="status">{w}</p>
               ))}
               <RouteStats distanceKm={result.distanceKm} nnDistanceKm={result.nnDistanceKm} durationMin={result.durationMin} total={result.budget.total} />
 
               <div className="grid gap-6 md:grid-cols-2">
-                <div className="panel p-4">
-                  <h3 className="mb-4 text-base font-medium">Маршрут</h3>
+                <div className="glass p-5">
+                  <h3 className="mb-4 text-base font-bold">Маршрут</h3>
                   <RouteRibbon
                     stops={[{ name: start.name, note: 'старт' }, ...ordered.map((l) => ({ name: l.name, note: `огляд ${formatMinutes(l.visitMin)}` }))]}
                     legs={result.legsKm}
@@ -242,27 +250,27 @@ export default function PlannerPage() {
                   />
                 </div>
                 <div className="space-y-6">
-                  <div className="panel p-4">
-                    <h3 className="mb-3 text-base font-medium">План по днях</h3>
+                  <div className="glass p-5">
+                    <h3 className="mb-3 text-base font-bold">План по днях</h3>
                     <DayPlan plan={result.plan} byId={byId} days={form.days} maxPerDay={meta.limits.maxMinutesPerDay} />
                   </div>
-                  <div className="panel p-4">
-                    <h3 className="mb-3 text-base font-medium">Кошторис</h3>
+                  <div className="glass p-5">
+                    <h3 className="mb-3 text-base font-bold">Кошторис</h3>
                     <BudgetTable budget={result.budget} />
                   </div>
                 </div>
               </div>
 
-              <form onSubmit={save} className="panel flex flex-col gap-3 p-4 sm:flex-row sm:items-end">
+              <form onSubmit={save} className="glass flex flex-col gap-3 p-4 sm:flex-row sm:items-end">
                 <div className="flex-1">
                   <label className="label" htmlFor="t-title">Назва подорожі</label>
                   <input id="t-title" className="input" value={title} onChange={(e) => setTitle(e.target.value)} required maxLength={120} />
                 </div>
-                <Button type="submit" variant="secondary" disabled={saving}>
+                <Button type="submit" variant="light" disabled={saving}>
                   {saving ? 'Зберігаємо…' : 'Зберегти подорож'}
                 </Button>
               </form>
-              <p className="text-xs text-slate-soft">
+              <p className="text-xs text-mist">
                 Джерело відстаней: {result.source === 'osrm' ? 'дороги OSRM' : 'наближений розрахунок'}; обчислення {result.computeMs} мс.
               </p>
             </section>

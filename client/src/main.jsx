@@ -6,13 +6,16 @@ import './index.css';
 import App from './App.jsx';
 import { AuthProvider } from './context/AuthContext.jsx';
 import { TripProvider } from './context/TripContext.jsx';
+import { BackdropProvider } from './context/BackdropContext.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
       <AuthProvider>
         <TripProvider>
-          <App />
+          <BackdropProvider>
+            <App />
+          </BackdropProvider>
         </TripProvider>
       </AuthProvider>
     </BrowserRouter>

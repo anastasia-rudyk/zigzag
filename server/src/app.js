@@ -9,6 +9,7 @@ import authRoutes from './routes/auth.js';
 import categoryRoutes from './routes/categories.js';
 import locationRoutes from './routes/locations.js';
 import tripRoutes from './routes/trips.js';
+import reviewRoutes from './routes/reviews.js';
 import { errorHandler, notFound } from './middleware/error.js';
 import { defaultPrices, limits } from './config/index.js';
 import { startCities } from './seed/data.js';
@@ -36,6 +37,7 @@ export function createApp() {
   app.use('/api/categories', categoryRoutes);
   app.use('/api/locations', locationRoutes);
   app.use('/api/trips', tripRoutes);
+  app.use('/api/reviews', reviewRoutes);
   app.use('/api', notFound);
 
   // У продакшні сервер віддає зібраний клієнт (SPA)

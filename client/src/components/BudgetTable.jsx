@@ -17,24 +17,21 @@ export default function BudgetTable({ budget }) {
       <caption className="sr-only">Кошторис подорожі</caption>
       <tbody>
         {ROWS.map(([key, label]) => (
-          <tr key={key} className="border-b border-line">
-            <th scope="row" className="py-2 text-left font-medium">
+          <tr key={key} className="border-b border-white/10">
+            <th scope="row" className="py-2 pr-4 text-left font-medium">
               {label}
-              <span className="mt-1 block h-1 rounded-full bg-mist">
-                <span
-                  className="block h-1 rounded-full bg-fir"
-                  style={{ width: `${((budget[key] || 0) / total) * 100}%` }}
-                />
+              <span className="mt-1.5 block h-1 rounded-full bg-white/10">
+                <span className="block h-1 rounded-full bg-route" style={{ width: `${((budget[key] || 0) / total) * 100}%` }} />
               </span>
             </th>
             <td className="py-2 text-right tabular-nums">{formatUAH(budget[key])}</td>
           </tr>
         ))}
         <tr>
-          <th scope="row" className="pt-3 text-left font-display font-medium">
+          <th scope="row" className="pt-3 text-left font-display font-bold">
             Разом
           </th>
-          <td className="pt-3 text-right font-display font-medium tabular-nums">{formatUAH(budget.total)}</td>
+          <td className="pt-3 text-right font-display font-bold tabular-nums">{formatUAH(budget.total)}</td>
         </tr>
       </tbody>
     </table>

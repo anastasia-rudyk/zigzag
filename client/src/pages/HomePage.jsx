@@ -1,10 +1,13 @@
-import { Link } from 'react-router-dom';
-import Button from '../components/Button.jsx';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import CategoryTabs from '../components/CategoryTabs.jsx';
+import PhotoCard from '../components/PhotoCard.jsx';
 import RouteRibbon from '../components/RouteRibbon.jsx';
-import LocationCard from '../components/LocationCard.jsx';
+import Button from '../components/Button.jsx';
+import Icon from '../components/Icon.jsx';
 import { Spinner, ErrorNote } from '../components/Feedback.jsx';
 import { api } from '../api/client.js';
 import { useAsync } from '../api/useAsync.js';
+import { useBackdrop } from '../context/BackdropContext.jsx';
 
 const SAMPLE_STOPS = [
   { name: 'Львів', note: 'старт' },
@@ -14,77 +17,155 @@ const SAMPLE_STOPS = [
 ];
 
 const STEPS = [
-  ['Оберіть місця', 'Знайдіть у каталозі замки, озера, вершини чи гастрономічні зупинки й додайте їх до подорожі.'],
-  ['Задайте параметри', 'Вкажіть місто старту, кількість днів, подорожніх і транспорт.'],
-  ['Отримайте маршрут', 'Система знайде найкоротший порядок відвідування, розкладе його по днях і порахує бюджет.'],
+  ['Оберіть місця', 'Натискайте «+» на картках або маркерах карти — місця потраплять у ваш маршрут.'],
+  ['Задайте параметри', 'Місто старту, кількість днів, подорожніх і транспорт.'],
+  ['Отримайте маршрут', 'Zigzag знайде найкоротший порядок відвідування, розкладе його по днях і порахує бюджет.'],
 ];
 
 export default function HomePage() {
-  const { data, loading, error, reload } = useAsync(() => api.locations({ sort: 'region' }), []);
-  const featured = (data || []).filter((_, i) => i % 4 === 0).slice(0, 6);
+  const all = useAsync(() => Promise.all([api.locations({ sort: 'rating' }), api.categories()]), []);
+  const [locations, categories] = all.data || [[], []];
+  const [category, setCategory] = useState('');
+  const [active, setActive] = useState(0);
+  const trackRef = useRef(null);
+
+  // Для каруселі — локації з фото, щоб вітрина виглядала цілісно
+  const items = useMemo(() => {
+    const withPhoto = locations.filter((l) => l.photos?.length);
+    const pool = withPhoto.length >= 6 ? withPhoto : locations;
+    return pool.filter((l) => !category || l.categoryId?._id === category).slice(0, 12);
+  }, [locations, category]);
+
+  useBackdrop(items[active]?.photos?.[0]);
+
+  // Нова категорія — карусель повертається до першої картки
+  useEffect(() => {
+    setActive(0);
+    trackRef.current?.scrollTo({ left: 0 });
+  }, [category]);
+
+  // Активна картка — та, чий центр найближчий до центру каруселі
+  function onScroll() {
+    const track = trackRef.current;
+    if (!track) return;
+    const center = track.scrollLeft + track.clientWidth / 2;
+    let best = 0;
+    let bestDist = Infinity;
+    [...track.children].forEach((el, i) => {
+      const dist = Math.abs(el.offsetLeft + el.offsetWidth / 2 - center);
+      if (dist < bestDist) {
+        bestDist = dist;
+        best = i;
+      }
+    });
+    if (best !== active) setActive(best);
+  }
+
+  function goTo(i) {
+    const el = trackRef.current?.children[i];
+    if (!el) return;
+    const track = trackRef.current;
+    track.scrollTo({ left: el.offsetLeft - (track.clientWidth - el.offsetWidth) / 2, behavior: 'smooth' });
+  }
 
   return (
     <div className="space-y-16">
-      <section className="page grid items-center gap-10 lg:grid-cols-[1.2fr_1fr]">
-        <div>
-          <h1 className="mb-5 text-4xl font-bold leading-[1.1] sm:text-5xl">
-            Подорожі Україною без зайвих зигзагів
+      <section aria-labelledby="hero-title">
+        <div className="page flex flex-col items-center text-center">
+          <h1 id="hero-title" className="mb-6 mt-4 text-4xl font-bold sm:text-6xl">
+            Куди поїдемо?
           </h1>
-          <p className="mb-8 max-w-xl text-lg text-slate-soft">
-            Оберіть місця, які хочете побачити, а Zigzag складе найкоротший маршрут, розкладе його по днях і
-            порахує, скільки коштуватиме поїздка.
-          </p>
-          <div className="flex flex-wrap gap-3">
-            <Button to="/catalog" size="lg">
+          <CategoryTabs categories={categories} value={category} onChange={setCategory} className="mb-8" />
+        </div>
+
+        {all.loading && <div className="page"><Spinner /></div>}
+        <div className="page"><ErrorNote error={all.error} onRetry={all.reload} /></div>
+
+        {items.length > 0 && (
+          <div className="relative">
+            <div
+              ref={trackRef}
+              onScroll={onScroll}
+              className="no-scrollbar flex snap-x snap-mandatory items-center gap-5 overflow-x-auto scroll-smooth py-6"
+              style={{ paddingInline: 'max(1rem, calc(50% - 11rem))' }}
+              aria-label="Популярні місця"
+            >
+              {items.map((loc, i) => (
+                <div
+                  key={loc._id}
+                  className={`w-[78vw] max-w-[22rem] shrink-0 snap-center transition-transform duration-500 ${
+                    i === active ? 'scale-100' : 'scale-[0.88]'
+                  }`}
+                >
+                  <PhotoCard location={loc} size="lg" dimmed={i !== active} />
+                </div>
+              ))}
+            </div>
+
+            {/* На телефоні стрілки під каруселлю, на ширших екранах — по боках */}
+            <div className="page no-print mt-2 flex items-center justify-center gap-3 sm:pointer-events-none sm:absolute sm:inset-x-0 sm:top-1/2 sm:mt-0 sm:-translate-y-1/2 sm:justify-between">
+              <button
+                onClick={() => goTo(Math.max(active - 1, 0))}
+                disabled={active === 0}
+                className="glass flex h-11 w-11 items-center justify-center rounded-full disabled:opacity-40 sm:pointer-events-auto sm:h-14 sm:w-14"
+                aria-label="Попереднє місце"
+              >
+                <Icon name="chevronLeft" />
+              </button>
+              <span className="min-w-16 text-center text-sm text-mist sm:hidden" aria-live="polite">
+                {active + 1} / {items.length}
+              </span>
+              <button
+                onClick={() => goTo(Math.min(active + 1, items.length - 1))}
+                disabled={active === items.length - 1}
+                className="glass flex h-11 w-11 items-center justify-center rounded-full disabled:opacity-40 sm:pointer-events-auto sm:h-14 sm:w-14"
+                aria-label="Наступне місце"
+              >
+                <Icon name="chevronRight" />
+              </button>
+            </div>
+          </div>
+        )}
+      </section>
+
+      <section className="page grid gap-6 lg:grid-cols-[1.3fr_1fr]" aria-labelledby="how">
+        <div className="glass p-6 sm:p-8">
+          <h2 id="how" className="mb-6 text-2xl font-bold">
+            Подорожі без зайвих зигзагів
+          </h2>
+          <ol className="space-y-5">
+            {STEPS.map(([title, text], i) => (
+              <li key={title} className="flex gap-4">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-route font-display font-bold">
+                  {i + 1}
+                </span>
+                <div>
+                  <h3 className="mb-0.5 font-sans text-base font-bold">{title}</h3>
+                  <p className="text-sm text-mist">{text}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <Button to="/catalog" variant="light" size="lg">
               Обрати місця
             </Button>
-            <Button to="/planner" size="lg" variant="outline">
+            <Button to="/planner" variant="glass" size="lg">
               Відкрити конструктор
             </Button>
           </div>
         </div>
 
-        <aside className="panel p-6" aria-label="Приклад маршруту">
-          <div className="mb-4 flex items-baseline justify-between gap-2">
-            <h2 className="text-base font-medium">Золота підкова Львівщини</h2>
-            <span className="text-sm text-slate-soft">1 день</span>
+        <aside className="glass p-6" aria-label="Приклад маршруту">
+          <div className="mb-5 flex items-baseline justify-between gap-2">
+            <h2 className="text-base font-bold">Золота підкова Львівщини</h2>
+            <span className="text-sm text-mist">1 день</span>
           </div>
           <RouteRibbon stops={SAMPLE_STOPS} legs={[72, 9, 24]} />
-          <p className="mt-4 border-t border-line pt-4 text-sm text-slate-soft">
-            Приклад: відстані наближені. Побудуйте власний маршрут у конструкторі.
+          <p className="mt-4 border-t border-white/10 pt-4 text-sm text-mist">
+            Приклад маршруту, відстані наближені.
           </p>
         </aside>
-      </section>
-
-      <section className="page" aria-labelledby="how">
-        <h2 id="how" className="mb-6 text-2xl font-medium">Як це працює</h2>
-        <ol className="grid gap-4 md:grid-cols-3">
-          {STEPS.map(([title, text], i) => (
-            <li key={title} className="flex gap-4">
-              <span className="font-display text-3xl font-bold text-route">{i + 1}</span>
-              <div>
-                <h3 className="mb-1 text-base font-medium">{title}</h3>
-                <p className="text-sm text-slate-soft">{text}</p>
-              </div>
-            </li>
-          ))}
-        </ol>
-      </section>
-
-      <section className="page" aria-labelledby="featured">
-        <div className="mb-6 flex items-end justify-between gap-4">
-          <h2 id="featured" className="text-2xl font-medium">Куди поїхати</h2>
-          <Link to="/catalog" className="text-sm font-semibold text-fir hover:underline">
-            Увесь каталог
-          </Link>
-        </div>
-        {loading && <Spinner />}
-        <ErrorNote error={error} onRetry={reload} />
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {featured.map((loc) => (
-            <LocationCard key={loc._id} location={loc} />
-          ))}
-        </div>
       </section>
     </div>
   );

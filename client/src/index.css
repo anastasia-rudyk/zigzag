@@ -4,16 +4,22 @@
 
 @layer base {
   html {
-    @apply bg-mist text-ink antialiased;
+    @apply bg-night text-ink antialiased;
+    color-scheme: dark;
   }
   body {
     @apply font-sans leading-relaxed;
   }
-  h1, h2, h3 {
+  h1, h2, h3, h4 {
     @apply font-display tracking-tight text-ink;
   }
   :focus-visible {
-    @apply outline-none ring-2 ring-route ring-offset-2 ring-offset-mist;
+    @apply outline-none ring-2 ring-route ring-offset-2 ring-offset-night;
+  }
+  /* Випадні списки на темному фоні */
+  option {
+    background: #0d1a16;
+    color: #f2f5f3;
   }
 }
 
@@ -21,42 +27,100 @@
   .page {
     @apply mx-auto w-full max-w-page px-4 sm:px-6;
   }
-  .panel {
-    @apply rounded-xl border border-line bg-white;
+  /* «Скляна» панель — основний будівельний блок інтерфейсу */
+  .glass {
+    @apply rounded-2xl border border-white/15 bg-white/[0.07] shadow-glass backdrop-blur-xl;
+  }
+  .glass-strong {
+    @apply rounded-2xl border border-white/15 bg-night/70 shadow-glass backdrop-blur-xl;
   }
   .input {
-    @apply w-full rounded-lg border border-line bg-white px-3 py-2 text-ink placeholder:text-slate-soft
-      focus:border-fir focus:outline-none focus:ring-2 focus:ring-fir/30;
+    @apply w-full rounded-xl border border-white/20 bg-white/10 px-3 py-2 text-ink placeholder:text-mist/70
+      focus:border-route focus:outline-none focus:ring-2 focus:ring-route/30;
   }
   .label {
-    @apply mb-1 block text-sm font-semibold text-ink;
+    @apply mb-1 block text-sm font-semibold text-mist;
+  }
+  .muted {
+    @apply text-mist;
+  }
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
   }
 }
 
-/* Карта Leaflet успадковує шрифт сторінки */
+/* Карта Leaflet на темному фоні */
 .leaflet-container {
   font-family: inherit;
-  border-radius: 0.75rem;
+  border-radius: 1rem;
+  background: #0d1a16;
   z-index: 0;
+}
+.leaflet-tooltip {
+  background: rgba(13, 26, 22, 0.9);
+  color: #f2f5f3;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 0.5rem;
+  box-shadow: none;
+  font-weight: 600;
+}
+.leaflet-tooltip-top::before {
+  border-top-color: rgba(13, 26, 22, 0.9);
+}
+.leaflet-bar a {
+  background: rgba(13, 26, 22, 0.85);
+  color: #f2f5f3;
+  border-color: rgba(255, 255, 255, 0.15);
+}
+.leaflet-control-attribution {
+  background: rgba(13, 26, 22, 0.7) !important;
+  color: #a9bdb5 !important;
+}
+.leaflet-control-attribution a {
+  color: #ffb27f !important;
+}
+
+.backdrop-fade {
+  animation: backdrop-fade 700ms ease-out;
+}
+@keyframes backdrop-fade {
+  from {
+    opacity: 0;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
 
 /* Друк плану подорожі (експорт у PDF через діалог друку) */
 @media print {
-  header, footer, .no-print {
+  .no-print,
+  .backdrop {
     display: none !important;
   }
-  html, body {
-    background: white;
+  html,
+  body {
+    background: white !important;
+    color: black !important;
   }
-  .panel {
-    border-color: #999;
+  h1, h2, h3, h4,
+  .glass,
+  .glass * {
+    color: black !important;
+  }
+  .glass {
+    background: white !important;
+    border-color: #999 !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
     break-inside: avoid;
   }
 }

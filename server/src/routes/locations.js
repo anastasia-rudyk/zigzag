@@ -1,11 +1,12 @@
 import { Router } from 'express';
 import { Location } from '../models/Location.js';
+import { Review } from '../models/Review.js';
 import { requireAuth, requireAdmin } from '../middleware/auth.js';
 import { asyncHandler } from '../middleware/error.js';
 
 const router = Router();
 
-const FIELDS = ['name', 'description', 'region', 'categoryId', 'lat', 'lng', 'visitMin', 'ticketPrice', 'photos'];
+const FIELDS = ['name', 'description', 'region', 'categoryId', 'lat', 'lng', 'visitMin', 'ticketPrice', 'photos', 'photoCredit'];
 const pick = (body) => Object.fromEntries(FIELDS.filter((k) => body?.[k] !== undefined).map((k) => [k, body[k]]));
 const escapeRegex = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
@@ -24,7 +25,13 @@ router.get(
     if (category) filter.categoryId = category;
     if (maxPrice !== undefined && maxPrice !== '') filter.ticketPrice = { $lte: Number(maxPrice) };
 
-    const sortBy = { name: { name: 1 }, price: { ticketPrice: 1 }, region: { region: 1, name: 1 } }[sort] || { name: 1 };
+    const sortBy =
+      {
+        name: { name: 1 },
+        price: { ticketPrice: 1, name: 1 },
+        region: { region: 1, name: 1 },
+        rating: { ratingAvg: -1, ratingCount: -1, name: 1 },
+      }[sort] || { name: 1 };
     const items = await Location.find(filter).populate('categoryId').sort(sortBy);
     res.json(items);
   })
@@ -79,6 +86,7 @@ router.delete(
   asyncHandler(async (req, res) => {
     const item = await Location.findByIdAndDelete(req.params.id);
     if (!item) return res.status(404).json({ message: 'Локацію не знайдено' });
+    await Review.deleteMany({ locationId: item._id });
     res.status(204).end();
   })
 );

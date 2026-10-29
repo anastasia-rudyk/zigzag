@@ -38,7 +38,9 @@ router.post(
 router.get(
   '/',
   asyncHandler(async (req, res) => {
-    const trips = await Trip.find({ userId: req.user._id }).sort({ createdAt: -1 }).populate('points', 'name region');
+    const trips = await Trip.find({ userId: req.user._id })
+      .sort({ createdAt: -1 })
+      .populate({ path: 'points', select: 'name region photos categoryId', populate: { path: 'categoryId' } });
     res.json(trips);
   })
 );
